@@ -2,7 +2,7 @@
 title: "SRP041579 DP QUAL report"
 author: "jlai"
 date: '2022-05-14'
-output: html_document
+output: rmarkdown::github_document
 ---
 
 ```{r setup, include=FALSE}
