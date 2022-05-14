@@ -1,0 +1,37 @@
+---
+title: "PRJEB5259 merged with ref PCA analysis"
+author: "jlai"
+date: '2022-05-14'
+output: rmarkdown::github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(ggrepel)
+```
+
+## Data input
+
+Data input should be eigenvec from plink --pca function
+
+```{r load dataset, echo = F, include = F}
+proj.dir <- "../../plink_out/"
+eigen.df <- read_tsv(paste(proj.dir, "PRJEB5259_merge_pca.eigenvec", sep = "/"))
+```
+
+## PCA plot
+
+
+```{r pca plot}
+ggplot(eigen.df,
+       aes(x = PC1,
+           y = PC2)) +
+geom_point() +
+  geom_text_repel(aes(label = IID)) +
+  theme_bw()
+         
+         
+```
+
+
