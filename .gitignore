@@ -4,3 +4,5 @@
 .Ruserdata
 *.vcf.gz
 *.Rproj
+merge_vcfs
+plink_out
