@@ -1,8 +1,8 @@
 ---
-title: "A template" # replace this title accordingly
+title: "<project> DP QUAL report" # replace this title accordingly
 author: "jlai"
 date: '2022-05-14' 
-output: html_document
+output: rmarkdown::github_document
 ---
 
 ```{r setup, include=FALSE}
